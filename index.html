@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>FormHTML5-Lourdes Miranda Moreno</title>
+    <meta charset="utf8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+
+<body>
+    <div class="container p-0 mt-5 rounded-1">
+        <header class="border-bottom black-50 p-2">
+            <h2>Payment form example</h2>
+        </header>
+
+        <main class="container-fluid p-2 mb-2 bg-light text-dark">
+            <!--ALERT-->
+            <div class="alert alert-danger me-3 ms-3 mt-2" role="alert">
+                Some fields are missing
+            </div>
+            <!--FIN ALERT-->
+            <!--TARJETA-->
+            <div class="row g-3">
+                <div class="col-sm-6">
+                    <h5>Card #</h5>
+                    <input type="password" class="form-control" placeholder="XXXXXXXXXXXXX" aria-label="City">
+                </div>
+                <div class="col-sm-2">
+                    <h5>CVC #</h5>
+                    <input type="text" class="form-control" placeholder="0000" aria-label="State">
+                </div>
+                <div class="col-sm-4">
+                    <h5>Amount</h5>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <input type="text" class="form-control" placeholder="Amount" aria-label="Zip">
+                    </div>
+                </div>
+            </div>
+            <!--FIN TARJETA-->
+            <!--NOMBRE Y APELLIDO-->
+            <div class="row g-3 mt-2">
+                <div class="col">
+                    <h5>Firs Name</h5>
+                    <input type="text" class="form-control" aria-label="First name">
+                </div>
+                <div class="col">
+                    <h5>Last Name</h5>
+                    <input type="text" class="form-control" aria-label="Last name">
+                </div>
+            </div>
+            <!--FIN NOMBRE Y APELLIDO-->
+            <!--DIRECCION-->
+            <div class="row g-3 mt-2">
+                <div class="col-sm-7">
+                    <h5>City</h5>
+                    <input type="text" class="form-control" aria-label="City">
+                </div>
+                <div class="col-sm">
+                    <h5>Province</h5>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Pick a region</option>
+                        <option value="1">Andalucía</option>
+                        <option value="2">Aragón</option>
+                        <option value="3">Asturias</option>
+                        <option value="4">Baleares</option>
+                        <option value="5">Canarias</option>
+                        <option value="6">Cantabria</option>
+                        <option value="7">Castilla-La Mancha</option>
+                        <option value="8">Castilla y León</option>
+                        <option value="9">Cataluña</option>
+                        <option value="10">Comunidad Valenciana</option>
+                        <option value="11">Extremadura</option>
+                        <option value="12">Galicia</option>
+                        <option value="13">La Rioja</option>
+                        <option value="14">Madrid</option>
+                        <option value="15">Murcia</option>
+                        <option value="16">Navarra</option>
+                        <option value="17">País Vasco</option>
+                        <option value="18">Ceuta</option>
+                        <option value="19">Melilla</option>
+                    </select>
+                </div>
+                <div class="col-sm">
+                    <h5>Postal Code</h5>
+                    <input type="text" class="form-control" aria-label="Zip">
+                </div>
+            </div>
+            <!--FIN DIRECCION-->
+            <!--PAGO Y MENSAJE-->
+            <div class="row align-items-start mt-3">
+                <div class="col">
+                    <h5>We accept:</h5>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1"><i
+                                class="fa-brands fa-cc-mastercard"></i></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa"></i></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                            value="option3">
+                        <label class="form-check-label" for="inlineRadio3"><i
+                                class="fa-brands fa-cc-diners-club"></i></label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                            value="option3">
+                        <label class="form-check-label" for="inlineRadio3"><i class="fa-solid fa-coins"></i></label>
+                    </div>
+                </div>
+                <div class="col">
+                     <h5>Message</h5>
+                    <div class="mb-2">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <p class="text-muted"><small>Add any notes here.</small></p>
+                    </div>
+                </div>
+            </div>
+            <!--FIN PAGO Y MENSAJE-->
+        </main>
+        <footer class="border-top black-50 p-3 d-flex justify-content-end gap-2">
+            <button type="button" class="btn btn-secondary">Cancel</button>
+            <button type="button" class="btn btn-primary">Send</button>
+        </footer>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
